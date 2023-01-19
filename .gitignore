@@ -24,4 +24,5 @@ hs_err_pid*
 replay_pid*
 
 results/*
+resized_images/*
 chuck_norris.jpg
