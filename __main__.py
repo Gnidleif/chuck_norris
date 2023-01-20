@@ -1,1 +1,1 @@
-import chucknorris.py
+import prepare.py
