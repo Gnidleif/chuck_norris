@@ -28,9 +28,6 @@ def run(_: list[str]) -> None:
     for file in pathlib.Path(__source__).glob('*.jpg'):
         _ = resize_image(file)
 
-    # with open(__location__ / "jokes.txt", 'r', encoding="utf-8") as r_txt:
-    #     cfg["jokes"] = r_txt.read().split('\n')
-
     img_urls = []
     client = imgbbpy.SyncClient(cfg["api_key"])
     for file in pathlib.Path(__resized__).glob("*.jpg"):
