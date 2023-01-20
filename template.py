@@ -44,7 +44,7 @@ def run(_: list[str]) -> None:
     img.save(result)
 
     client = imgbbpy.SyncClient(__config__["api_key"])
-    url = client.upload(file=result, name=uuid.uuid4()).url
+    url = client.upload(file=result, name=uuid.uuid4(), expiration=86400).url
     os.remove(result)
 
     print("Chuck Norris image generated here: " + url)
