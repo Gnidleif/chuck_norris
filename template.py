@@ -22,7 +22,7 @@ def create_image(joke: str, img_data: str) -> Image:
         (x, y) = (pos[0], pos[1] + o * i)
         (l, t, r, b) = draw.textbbox((x, y), wrapped[i], font=font)
         draw.rectangle((l - m, t - m, r + m, b + m), fill = black)
-        draw.text((x, y), wrapped[i], font=font, fill = white)
+        draw.text((x, y), wrapped[i], font = font, fill = white)
     
     return img
 
